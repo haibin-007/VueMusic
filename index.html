@@ -23,34 +23,13 @@
     <link rel="icon" href="static/logo.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="static/logo.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="static/logo.ico" type="image/x-icon"/>
-    <script>
-      ;(function (win,doc){
-        var recalc = function (){
-          var docEL = doc.documentElement;
-          if (!docEL.clientWidth) return;
-          docEL.style.fontSize = docEL.clientWidth / 7.5 + 'px';
-        }
-        if (!doc.addEventListener) return;
-        win.addEventListener('resize', recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-      })(window,document)
-    </script>
-    <style>
-      i{font-style: normal;}
-      body,header,nav,section,footer,aside,div,span,img,a,ol,ul,li,p,input,button{margin: 0;padding: 0;-webkit-box-sizing: border-box; box-sizing: border-box;}
-      body{font:.12rem/normal Microsoft Yahei,Arial;}
-      img,a,input,button{display: block;}
-      img {vertical-align: middle;}
-      a{text-decoration-line: none;}
-      a:visited,a:active,a:link,a:hover{color:#000;}
-      ul,ol,li{list-style: none;}
-      input,button{border-style: none;outline-style: none;}
-    </style>
 
-    <title>网易云音乐8</title>
+    <title>网易云音乐</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+        <router-view></router-view>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
