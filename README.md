@@ -41,4 +41,4 @@ npm run build
 npm run build --report
 ```
 
-Fork或借鉴请注明出处 [@ HeavenBin](https://heavenbin.github.io/VueMusic/)
+> Fork或借鉴请注明出处 [@ HeavenBin](https://heavenbin.github.io/VueMusic/)
