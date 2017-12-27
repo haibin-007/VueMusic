@@ -1,7 +1,7 @@
-# my-music
+# VueMusic
 
 > CloudMusic
-### 项目构成
+## 项目构成
 
 <pre>
 ├── build                  // webpack配置文件
@@ -24,7 +24,7 @@
 │   └── main.js       	   // 程序入口文件
 </pre>
 
-### 构建步骤
+## 构建步骤
 
 ``` bash
 # install dependencies
