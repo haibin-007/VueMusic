@@ -1,6 +1,7 @@
 # VueMusic
 
-> CloudMusic
+> CloudMusic 本项目仅供学习交流使用，切勿用于商业用途，如有侵犯第三方版权问题及时联系我
+
 ## 项目构成
 
 <pre>
@@ -40,3 +41,4 @@ npm run build
 npm run build --report
 ```
 
+Fork或借鉴请注明出处 [@ HeavenBin](https://heavenbin.github.io/VueMusic/)
