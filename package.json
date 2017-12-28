@@ -1,5 +1,5 @@
 {
-  "name": "my-music",
+  "name": "VueMusic",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Heaven <1302888286@qq.com>",
@@ -12,7 +12,8 @@
   "dependencies": {
     "axios": "^0.17.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <router-link to="music">跳转</router-link>
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <p>13160674351</p><p>1302888286@qq.com</p>
