@@ -3,8 +3,7 @@ import VueRouter from 'vue-router'
 import {routerMode} from '../config/env'
 import App from '../App'
 
-const HelloWorld = r => require.ensure([], () => r(require('../pages/HelloWorld/HelloWorld')), 'HelloWorld')
-const Music = r => require.ensure([], () => r(require('../pages/Music/Music')), 'Music')
+const Home = r => require.ensure([], () => r(require('../pages/home/home')), 'Home')
 
 const routes =[
   {
@@ -17,15 +16,10 @@ const routes =[
       },
       {
         path: '/home',
-        name: 'HelloWorld',
-        component: HelloWorld,
-        meta: { keepAlive: true }
+        name: 'Home',
+        component: Home,
+        // meta: { keepAlive: true }
       },
-      {
-        path: '/music',
-        name: 'Music',
-        component: Music,
-      }
     ]
   }
 ]
