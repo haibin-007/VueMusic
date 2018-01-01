@@ -16,3 +16,18 @@ input,button{border-style: none;outline-style: none;}
   color: #2c3e50;
   margin-top: 60px;
 } */
+.hide{display:none;}
+.show{display: block;}
+.clear{*zoom:1;}
+.clear:after{display:table; content:''; clear:both;}
+.left{float:left;}
+.right{float:right;}
+
+.auto{margin-left:auto; margin-right:auto;}
+
+
+.ell{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.ellis{overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+// #page{position:absolute;top:0;left:0;right:0;bottom:0;}
+// .ts{text-shadow: .01rem .01rem .1rem rgba(0,0,0,.5)}
+// .trans{-webkit-transition:all 0.3s;	transition:all 0.3s;}

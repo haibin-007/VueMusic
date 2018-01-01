@@ -1,16 +1,13 @@
 <template>
   <div id="_page">
-    vue-page
-    <svg aria-hidden="true">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-tinggeshiqu"></use>
-    </svg>
+    <head-top></head-top>
   </div>
 </template>
 <script type="text/javascript">
-  // import {} from './';
+  import headTop from '../../components/header/headTop';
   export default {
     components: {
-
+      headTop
     },
     props: [],
     mixins: [],
