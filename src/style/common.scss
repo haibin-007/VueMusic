@@ -1,4 +1,3 @@
-i{font-style: normal;}
 body,header,nav,section,footer,aside,div,span,img,a,ol,ul,li,p,input,button{margin: 0;padding: 0;-webkit-box-sizing: border-box; box-sizing: border-box;}
 body{font:.12rem/normal Microsoft Yahei,Arial;}
 img,a,input,button{display: block;}
@@ -31,3 +30,11 @@ input,button{border-style: none;outline-style: none;}
 // #page{position:absolute;top:0;left:0;right:0;bottom:0;}
 // .ts{text-shadow: .01rem .01rem .1rem rgba(0,0,0,.5)}
 // .trans{-webkit-transition:all 0.3s;	transition:all 0.3s;}
+.icon {
+  width: 0.5rem; 
+  height: 0.5rem;
+  vertical-align: -0.15rem;
+  fill: currentColor;
+  color: #fff;
+  overflow: hidden;
+}

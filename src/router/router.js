@@ -4,6 +4,7 @@ import {routerMode} from '../config/env'
 import App from '../App'
 
 const Home = r => require.ensure([], () => r(require('../pages/home/home')), 'Home')
+const Player = r => require.ensure([], () => r(require('../pages/player/player')), 'Player')
 
 const routes =[
   {
@@ -18,6 +19,12 @@ const routes =[
         path: '/home',
         name: 'Home',
         component: Home,
+        // meta: { keepAlive: true }
+      },
+      {
+        path: '/player',
+        name: 'Player',
+        component: Player,
         // meta: { keepAlive: true }
       },
     ]

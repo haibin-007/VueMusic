@@ -3,6 +3,7 @@ import router from './router/router'
 import store from './store/'
 import FastClick from 'fastclick'
 import './config/rem'
+import './images/iconfont'
 
 if ('addEventListener' in document) {     //消除点击延迟300ms，不需要双击
     document.addEventListener('DOMContentLoaded', function() {

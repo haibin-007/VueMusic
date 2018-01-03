@@ -3,6 +3,9 @@ const baseUrl = "/api";
 
 
 const apiMusic = {
+  banner: '/banner',    //首页轮播图
+
+
   loginCellphone: '/login/cellphone',  // 手机登陆
   userPlaylist: '/user/playlist',  // 获取用户歌单
   playlistDetail: '/playlist/detail',  // 获取歌单详情
@@ -36,7 +39,7 @@ const apiMusic = {
   albumComment: '/comment/album',  // 获取专辑评论
   artistMv: '/artist/mv'  // 获取歌手MV
 };
-
+export const BannerResource = baseUrl.concat(apiMusic.banner);
 export const LoginCellphoneResource = baseUrl.concat(apiMusic.loginCellphone);
 export const UserPlaylistResource = baseUrl.concat(apiMusic.userPlaylist);
 export const PlaylistDetailResource = baseUrl.concat(apiMusic.playlistDetail);

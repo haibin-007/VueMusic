@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {
+  BannerResource,
   LoginCellphoneResource,
   UserPlaylistResource,
   PlaylistDetailResource,
@@ -38,6 +39,15 @@ export const getRecommendResource = () => {
   axios({
     method:'get',
     url: RecommendResource,
+  }).then(res => {
+    console.log(res);
+  })// 获取每日推荐歌曲
+}
+
+export const getBannerResource = () => {
+  axios({
+    method:'get',
+    url: BannerResource,
   }).then(res => {
     console.log(res);
   })// 获取每日推荐歌曲

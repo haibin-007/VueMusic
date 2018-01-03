@@ -1,13 +1,12 @@
 <template>
-    <header id='head_top'>
-      <slot name='left'>
-        <svg aria-hidden="true" >
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-tinggeshiqu"></use>
-        </svg>
-        
-      </slot>
-      <slot name="title"></slot>
-      <slot name='right'></slot>
+    <header class='head_top'>
+      <slot name='left-icon'></slot>
+      <slot name='search'></slot>
+      <section class="head_title ell" v-if="headTitle">
+        <span>{{headTitle}}</span>
+      </section>
+      <slot name='right-icon' ></slot>
+      
     </header>
   </template>
   <script type="text/javascript">
@@ -16,7 +15,7 @@
       components: {
   
       },
-      props: [],
+      props: ['headTitle'],
       mixins: [],
       data() {
         return {
@@ -44,11 +43,19 @@
   
   <style lang="scss" scoped>
     @import '../../style/mixin';
-    #head_top {
+    .head_top {
       position: fixed;
       left: 0;
-      right: 0;
+      top: 0;
+      @include wh(100%,1rem);
+      background-color: $red;
       @include fj();
+      align-items: center;
+      padding: 0 0.2rem;
+      .head_title{
+        @include sc(0.15rem,#fff);
+      }
     }
+
   </style>
   
