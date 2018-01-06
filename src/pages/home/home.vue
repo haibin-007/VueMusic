@@ -4,6 +4,7 @@
       <svg slot="left-icon" class="icon" aria-hidden="true">
         <use xlink:href="#icon-maikefeng"></use>
       </svg>
+      
       <input slot="search" type="text" class="search" :placeholder="searchTip">
       <router-link to='player' slot="right-icon">
         <svg class="icon" aria-hidden="true">
@@ -11,7 +12,7 @@
         </svg>
       </router-link>
     </head-top>
-    <nav class='home_nav'>
+    <nav class='home_nav zx10'>
       <div class='nav_title'>
         <p :class="navNum == 1 ? 'on' : ''" @click='navNum=1'>音乐</p>
       </div>
@@ -24,27 +25,20 @@
     </nav>
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div v-for="item in swiperUrl" :key class="swiper-slide">
+          <img :src="item.pic" alt="" class="swiper_img">
+        </div>
       </div>
-      <!-- 如果需要分页器 -->
       <div class="swiper-pagination"></div>
-    
-      <!-- 如果需要导航按钮 -->
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
-    
-      <!-- 如果需要滚动条 -->
-      <div class="swiper-scrollbar"></div>
     </div>
   </div>
-</template>
+</template>.
+
 <script type="text/javascript">
   import headTop from '../../components/header/headTop';
-  import {getRecommendResource,getBannerResource} from '../../service/getData';
-  import '../../plugins/swiper.min.js'
-  import '../../plugins/swiper.min.css'
+  import {getBannerResource} from '../../service/getData';
+  import Swiper from 'swiper';
+  import '../../style/swiper.min.css';
   export default {
     components: {
       headTop
@@ -54,7 +48,8 @@
     data() {
       return {
         searchTip: '搜索音乐、歌词、电台',       //搜索框提示
-        navNum: '1'                            //导航选中项序号
+        navNum: '1',                           //导航选中项序号
+        swiperUrl: [],                         //轮播图地址
       }
     },
     created() {
@@ -62,35 +57,25 @@
     },
     mounted() {
       //请求数据
-      //this.initData();
-      getBannerResource();
-      getRecommendResource();
-      // var mySwiper = new Swiper('.swiper-container', {
-      //   direction: 'vertical',
-      //   loop: true,
-
-      //   // 如果需要分页器
-      //   pagination: {
-      //     el: '.swiper-pagination',
-      //   },
-
-      //   // 如果需要前进后退按钮
-      //   navigation: {
-      //     nextEl: '.swiper-button-next',
-      //     prevEl: '.swiper-button-prev',
-      //   },
-
-      //   // 如果需要滚动条
-      //   scrollbar: {
-      //     el: '.swiper-scrollbar',
-      //   },
-      // })  
+      this.initData();
     },
     computed: {
 
     },
     methods: {
-
+      async initData(){
+        getBannerResource().then(res => {
+          this.swiperUrl = [...res.banners];
+        }).then(() => {
+          new Swiper('.swiper-container', {
+            autoplay: true,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+            }
+          })
+        });
+      }
     },
     watch: {
 
@@ -127,7 +112,10 @@
     }
   }
   .swiper-container{
-    margin-top: 1.7rem;
+    margin-top: 1.73rem;
     @include wh(100%,3rem);
+    .swiper_img{
+      @include wh(100%,100%);
+    }
   }
 </style>

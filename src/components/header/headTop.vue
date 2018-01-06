@@ -1,5 +1,5 @@
 <template>
-    <header class='head_top'>
+    <header class='head_top zx10'>
       <slot name='left-icon'></slot>
       <slot name='search'></slot>
       <section class="head_title ell" v-if="headTitle">

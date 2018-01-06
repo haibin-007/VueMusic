@@ -1,57 +1,34 @@
-import axios from 'axios';
+// import axios from 'axios';
+// import {
+//   baseUrl
+// } from '../config/env';
+import fetch from '../config/fetch'
 import {
-  BannerResource,
-  LoginCellphoneResource,
-  UserPlaylistResource,
-  PlaylistDetailResource,
-  MusicUrlResource,
-  SearchResource,
-  LyricResource,
-  CommentResource,
-  AlbumResource,
-  ArtistsResource,
-  ArtistAlbumResource,
-  ArtistDescResource,
-  RecommendResource,
-  RecommendSongsResource,
-  PersonalFmResource,
-  DailySigninResource,
-  LikeMusicResource,
-  FmTrashResource,
-  TopPlaylistResource,
-  NewAlbumResource,
-  TopArtistsResource,
-  TopListResource,
-  PersonalizedResource,
-  PrivatecontentResource,
-  PersonalizedMvResource,
-  NewSongResource,
-  DjProgramResource,
-  MvResource,
-  SimiMvResource,
-  MvCommentResource,
-  PlaylistCommentResource,
-  AlbumCommentResource,
-  ArtistMvResource
-} from '../config/server';
+  banner
+}  from '../config/service';
 
-export const getRecommendResource = () => {
-  axios({
-    method:'get',
-    url: RecommendResource,
-  }).then(res => {
-    console.log(res);
-  })// 获取每日推荐歌曲
-}
+// export const getRecommendResource = () => {
+//   axios({
+//     method:'get',
+//     url: RecommendResource,
+//   }).then(res => {
+//     console.log(res);
+//   })// 获取每日推荐歌曲
+// }
 
-export const getBannerResource = () => {
-  axios({
-    method:'get',
-    url: BannerResource,
-  }).then(res => {
-    console.log(res);
-  })// 获取每日推荐歌曲
-}
+// export const getBannerResource = () => {
+//   axios({
+//     method:'get',
+//     url: baseUrl + banner,
+//   }).then(res => {
+//     console.log(res);
+//   })// 获取每日推荐歌曲
+// }
+
+export const getBannerResource = () => fetch(banner);
+
+
+
 
 // export default {
 //   // 获取个人信息，注入cookies
