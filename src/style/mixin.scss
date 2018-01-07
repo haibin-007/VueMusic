@@ -46,12 +46,6 @@
 	justify-content: $type;
 }
 
-//flex 布局和 子元素 对其方式    ----纵向居中
-@mixin fa($type: center){
-	display: flex;
-	align-items: $type;
-}
-
 // 背景图片地址和大小
 @mixin bis($url) { 
   //background: url(../../assets/img/ic-delete.png) no-repeat 0/100%;
@@ -77,7 +71,24 @@
   left: 0;
 }
 
+//懒加载动态
 
+@mixin lazybook{
+  transform-origin: 0;
+  transform: rotatey(-90deg);
+  transition: all 3s ease-out;
+  &[lazy=loaded] {
+    transform: rotatey(0deg);
+  }
+}
+
+@mixin lazyopacity{
+  opacity: 0;
+  transition: all 3s ease-out;
+  &[lazy=loaded] {
+    opacity: 1;
+  }
+}
 
 
 

@@ -4,7 +4,12 @@
 // } from '../config/env';
 import fetch from '../config/fetch'
 import {
-  banner
+  banner,
+  personalized,
+  privatecontent,
+  newsong,
+  personalizedmv,
+  djprogram
 }  from '../config/service';
 
 // export const getRecommendResource = () => {
@@ -25,9 +30,18 @@ import {
 //   })// 获取每日推荐歌曲
 // }
 
+//轮播图
 export const getBannerResource = () => fetch(banner);
-
-
+//推荐歌单
+export const getPersonalizedResource = () =>fetch(personalized);
+//独家放送
+export const getPrivatecontentResource = () =>fetch(privatecontent);
+//最新音乐
+export const getNewsongResource = () =>fetch(newsong);
+//推荐MV
+export const getPersonalizedmvResource = () =>fetch(personalizedmv);
+//推荐电台
+export const getDjprogramResource = () =>fetch(djprogram);
 
 
 // export default {

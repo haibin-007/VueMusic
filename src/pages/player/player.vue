@@ -1,6 +1,6 @@
 <template>
   <div id="player_page">
-    vue-page
+    player
   </div>
 </template>
 <script type="text/javascript">

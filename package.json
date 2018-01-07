@@ -14,6 +14,7 @@
     "fastclick": "^1.0.6",
     "swiper": "^4.0.7",
     "vue": "^2.5.2",
+    "vue-lazyload": "^1.1.4",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
