@@ -71,8 +71,7 @@
   left: 0;
 }
 
-//懒加载动态
-
+//懒加载动态-3d旋转
 @mixin lazybook{
   transform-origin: 0;
   transform: rotatey(-90deg);
@@ -81,7 +80,7 @@
     transform: rotatey(0deg);
   }
 }
-
+//懒加载动态-透明度
 @mixin lazyopacity{
   opacity: 0;
   transition: all 3s ease-out;
@@ -90,6 +89,35 @@
   }
 }
 
+// 左箭头
+@mixin rightArrows{
+  &::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #999;
+    border-width: 2px 0 0 2px;
+    transform: rotate(-45deg);
+    top: 6px;
+    left: 84px;
+  }
+}
+
+// 右箭头
+@mixin leftArrows{
+  &::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #999;
+    border-width: 2px 0 0 2px;
+    transform: rotate(135deg);
+    top: 6px;
+    left: 84px;
+  }
+}
 
 
 

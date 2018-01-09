@@ -19,6 +19,11 @@ Vue.use(VueLazyload, {
   // loading: 'src/images/img/loading.gif',
 })
 
+//首页欢迎页判断加载
+// if(true){
+//   router.push('wecome');
+// }
+
 /* eslint-disable no-new */
 new Vue({
   router,

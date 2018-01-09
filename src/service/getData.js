@@ -9,7 +9,8 @@ import {
   privatecontent,
   newsong,
   personalizedmv,
-  djprogram
+  djprogram,
+  logincellphone
 }  from '../config/service';
 
 // export const getRecommendResource = () => {
@@ -42,6 +43,10 @@ export const getNewsongResource = () =>fetch(newsong);
 export const getPersonalizedmvResource = () =>fetch(personalizedmv);
 //推荐电台
 export const getDjprogramResource = () =>fetch(djprogram);
+
+export const getLogincellphoneResource = ({phone,password}) =>fetch(logincellphone,{
+  phone,password
+});
 
 
 // export default {

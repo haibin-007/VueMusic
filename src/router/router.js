@@ -3,12 +3,15 @@ import VueRouter from 'vue-router'
 import {routerMode} from '../config/env'
 import App from '../App'
 
+const Wecome = r => require.ensure([], () => r(require('../pages/wecome/wecome')), 'Wecome')
+
 const Home = r => require.ensure([], () => r(require('../pages/home/home')), 'Home')
 const Player = r => require.ensure([], () => r(require('../pages/player/player')), 'Player')
 const Fm = r => require.ensure([], () => r(require('../pages/fm/fm')), 'Fm')
 const Everyday = r => require.ensure([], () => r(require('../pages/everyday/everyday')), 'Everyday')
 const Songlist = r => require.ensure([], () => r(require('../pages/songlist/songlist')), 'Songlist')
-const Rank = r => require.ensure([], () => r(require('../pages/Rank/rank')), 'rank')
+const Rank = r => require.ensure([], () => r(require('../pages/Rank/rank')), 'Rank')
+
 
 const routes =[
   {
@@ -17,7 +20,7 @@ const routes =[
     children: [
       {
         path: '',
-        redirect: '/home'
+        redirect: '/wecome'
       },
       {
         path: '/home',
@@ -54,6 +57,11 @@ const routes =[
         // meta: { keepAlive: true }
       },
     ]
+  },
+  {
+    path: '/wecome',      //欢迎页
+    name: 'Wecome',
+    component: Wecome,
   }
 ]
 

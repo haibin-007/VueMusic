@@ -5,10 +5,10 @@ export const newsong = '/personalized/newsong'; // 推荐音乐
 export const personalizedmv = '/personalized/mv';  // 推荐MV
 export const djprogram = '/personalized/djprogram';  // 推荐电台
 
+export const logincellphone = '/login/cellphone';  // 手机登陆
 
 
 
-export const loginCellphone = '/login/cellphone';  // 手机登陆
 export const userPlaylist = '/user/playlist';  // 获取用户歌单
 export const playlistDetail = '/playlist/detail';  // 获取歌单详情
 export const musicUrl = '/music/url'; // 获取音乐url
@@ -32,14 +32,15 @@ export const topList = '/top/list'; //  音乐排行榜
 
 
 
-
-
+export const artistMv = '/artist/mv'  // 获取歌手MV
 export const mv = '/mv'; // 获取mv数据
+
+
 export const simiMv = '/simi/mv'; // 获取相似mv
 export const mvComment = '/comment/mv';  // 获取mv评论
 export const playlistComment = '/comment/playlist';  // 获取歌单评论
 export const albumComment = '/comment/album';  // 获取专辑评论
-export const artistMv = '/artist/mv'  // 获取歌手MV
+
 
 
 
