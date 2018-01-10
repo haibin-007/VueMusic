@@ -4,6 +4,9 @@ export const privatecontent = '/personalized/privatecontent';  // 独家放送
 export const newsong = '/personalized/newsong'; // 推荐音乐
 export const personalizedmv = '/personalized/mv';  // 推荐MV
 export const djprogram = '/personalized/djprogram';  // 推荐电台
+export const mv = '/mv'; // 获取mv数据
+
+
 
 export const logincellphone = '/login/cellphone';  // 手机登陆
 
@@ -33,7 +36,7 @@ export const topList = '/top/list'; //  音乐排行榜
 
 
 export const artistMv = '/artist/mv'  // 获取歌手MV
-export const mv = '/mv'; // 获取mv数据
+
 
 
 export const simiMv = '/simi/mv'; // 获取相似mv
