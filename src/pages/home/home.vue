@@ -23,7 +23,7 @@
         <p @click='navNum=1'>视频</p>
       </div>
       <div class='nav_title'>
-        <p @click='navNum=2'>电台</p>
+        <p @click='navNum=2'>排行</p>
       </div>
     </nav>
     <div class="bar" :class="barMove">
@@ -181,7 +181,9 @@
     </transition-group>
     <transition-group>
       <div v-show="navNum == 2">
-        123
+        <part-rinking>
+
+        </part-rinking>
       </div>
     </transition-group>
     <!-- 主体结束 -->
@@ -200,6 +202,7 @@
   import footGuide from '../../components/footer/footGuide';
   import transitionGroup from '../../components/common/transitionGroup';
   import partVideo from './partVideo/partVideo';
+  import partRinking from './partRinking/partRinking';
   // import loading from '../../components/common/loading';
   import {
     getBannerResource,
@@ -218,6 +221,7 @@
       footGuide,
       transitionGroup,
       partVideo,
+      partRinking,
       // loading
     },
     props: [],

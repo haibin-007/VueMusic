@@ -5,7 +5,7 @@ export const newsong = '/personalized/newsong'; // 推荐音乐
 export const personalizedmv = '/personalized/mv';  // 推荐MV
 export const djprogram = '/personalized/djprogram';  // 推荐电台
 export const mv = '/mv'; // 获取mv数据
-
+export const toplist = '/top/list'; //  音乐排行榜
 
 
 export const logincellphone = '/login/cellphone';  // 手机登陆
@@ -31,7 +31,7 @@ export const fmTrash = '/fm_trash'; // 将音乐从私人FM中移除至垃圾桶
 export const topPlaylist = '/top/playlist'; //  歌单(网友精选歌单)
 export const newAlbum = '/top/albums';  // 新碟上架
 export const topArtists = '/top/artists'; //  热门歌手
-export const topList = '/top/list'; //  音乐排行榜
+
 
 
 

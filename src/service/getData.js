@@ -11,6 +11,7 @@ import {
   personalizedmv,
   djprogram,
   mv,
+  toplist,
 }  from '../config/service';
 
 // export const getRecommendResource = () => {
@@ -47,6 +48,8 @@ export const getDjprogramResource = () =>fetch(djprogram);
 export const getMvResource = (mvid) =>fetch(mv,{
   mvid
 });
+//获取排行榜
+export const getToplistResource = () =>fetch(toplist);
 
 
 

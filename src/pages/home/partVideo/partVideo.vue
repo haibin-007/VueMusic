@@ -98,7 +98,7 @@
         let res = await getPersonalizedmvResource()
         for (let item of res.result) {
           getMvResource(item.id).then(res => {
-            console.log(res);
+            // console.log(res);
             this.video.push({
               shareCount: res.data.shareCount,          //分享次数
               commentCount: res.data.commentCount,      //评论次数
