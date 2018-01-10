@@ -38,8 +38,8 @@
 + SVG：基于可扩展标记语言的可缩放矢量图形。
 + [接口来源](https://github.com/Binaryify/NeteaseCloudMusicApi)(感谢Binaryify不断更新的网易云音乐接口)
 ## 效果演示
-![music](https://github.com/HeavenBin/VueMusic/music.gif)
-![video](https://github.com/HeavenBin/VueMusic/video.gif)
+![music](https://github.com/HeavenBin/VueMusic/blob/master/music.gif)
+![video](https://github.com/HeavenBin/VueMusic/blob/master/video.gif)
 ## 构建步骤
 > 需要NodeJS环境
 
