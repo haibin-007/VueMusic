@@ -40,10 +40,20 @@
 ## 效果演示
 ![music](https://github.com/HeavenBin/myGif/blob/master/music.gif)
 ![video](https://github.com/HeavenBin/myGif/blob/master/video.gif)
-## 构建步骤
-> 需要NodeJS环境
+## 傻瓜式步骤
+> 需要NodeJS环境、git环境、推荐用cnpm安装依赖
 
-+ 安装依赖 npm install
-+ 启动本地服务 npm run dev 
-+ 打包发布代码 npm run build
+### 构建后台服务
++ git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git  
++ cd NeteaseCloudMusicApi/
++ cnpm install
++ npm start
+
+### 构建前端项目
++ git clone https://github.com/HeavenBin/VueMusic.git
++ cd VueMusic/
++ cnpm install
++ npm start
+
+
 
