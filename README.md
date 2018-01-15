@@ -30,6 +30,8 @@
 + Vue2：采用现代渐进式框架Vue2的版本
 + Vuex：管理公共组件状态量
 + vue-router：管理单页面应用路由
++ vue-lazyload：懒加载
++ fastclick：取消点击延时
 + 自定义ajax：基于xmlhttprequest对象以及新兴Fetch对象结合封装的http请求
 + CSS3：CSS3动画及样式。
 + Sass：css预处理语言。
