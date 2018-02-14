@@ -5,19 +5,19 @@
         <div class="ranking-official-area">
             <div class="surge">
                 <img src="./surge.jpg" alt="surge">
-                <v-songs-list :data="surgeList"></v-songs-list>
+                <!-- <v-songs-list :data="surgeList"></v-songs-list> -->
             </div>
             <div class="newSonges">
                 <img src="./newSonges.jpg" alt="newSonges">
-                <v-songs-list :data="newSongesList"></v-songs-list>
+                <!-- <v-songs-list :data="newSongesList"></v-songs-list> -->
             </div>
             <div class="original">
                 <img src="./original.jpg" alt="original">
-                <v-songs-list :data="originalList"></v-songs-list>
+                <!-- <v-songs-list :data="originalList"></v-songs-list> -->
             </div>
             <div class="hot">
                 <img src="./hot.jpg" alt="hot">
-                <v-songs-list :data="hotList"></v-songs-list>
+                <!-- <v-songs-list :data="hotList"></v-songs-list> -->
             </div>
         </div>
         <div class="title">全球榜</div>
@@ -115,12 +115,5 @@
       }      
     }   
   }
-    
-      
-    
-      
-          
-    
-        
   </style>
   
