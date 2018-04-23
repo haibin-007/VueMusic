@@ -48,27 +48,28 @@
           <div class="swiper-pagination"></div>
         </div>
         <!-- 轮播图结束 -->
+        
         <!-- 链接开始 -->
         <section class='clear'>
-          <router-link class='link-fm left' tag="li" to='fm'>
+          <router-link class='link-fm left' tag="li" to='/home/fm'>
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-fm"></use>
             </svg>
             <span>私人FM</span>
           </router-link>
-          <router-link class='link-everyday left' tag="li" to='everyday'>
+          <router-link class='link-everyday left' tag="li" to='/home/everyday'>
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-rili"></use>
             </svg>
             <span>每日推荐</span>
           </router-link>
-          <router-link class='link-songlist left' tag="li" to='songlist'>
+          <router-link class='link-songlist left' tag="li" to='/home/songlist'>
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-gedan"></use>
             </svg>
             <span>歌单</span>
           </router-link>
-          <router-link class='link-rank left' tag="li" to='rank'>
+          <router-link class='link-rank left' tag="li" to='/home/rank'>
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-ttpodicon"></use>
             </svg>
@@ -198,6 +199,9 @@
 </template>
 
 <script type="text/javascript">
+
+
+
   import headTop from '../../components/header/headTop';
   import footGuide from '../../components/footer/footGuide';
   import transitionGroup from '../../components/common/transitionGroup';

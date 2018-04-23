@@ -106,7 +106,7 @@
               name: res.data.name,
               source: '/api/mv/url?url=' + res.data.brs[240],
               loading: false,    //是否在加载中
-              isPlay: false,    //是否在播放
+              isPlay: false,     //是否在播放
               isPlayShow: false, //是否已经初始化，显示进度
               isControlShow: true, //控制控件是否显示
               currentTime: '00:00',  //当前时间

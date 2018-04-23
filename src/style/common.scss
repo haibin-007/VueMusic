@@ -2,7 +2,7 @@ body,header,nav,section,footer,aside,div,span,img,a,ol,ul,li,p,input,button{marg
 body{font:.12rem/normal Microsoft Yahei,Arial;}
 img,a,input,button{display: block;}
 img {vertical-align: middle;}
-a{text-decoration-line: none;}
+a{text-decoration: none;}
 a:visited,a:active,a:link,a:hover{color:#000;}
 ul,ol,li{list-style: none;}
 input,button{border-style: none;outline-style: none;}
@@ -15,7 +15,7 @@ input,button{border-style: none;outline-style: none;}
   color: #2c3e50;
   margin-top: 60px;
 } */
-.hide{display:none;}
+.hide{display: none;}
 .show{display: block;}
 .clear{*zoom:1;}
 .clear:after{display:table; content:''; clear:both;}
