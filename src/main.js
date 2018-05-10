@@ -9,6 +9,7 @@ import './images/svg/iconfont'
 //设置为 false 以阻止 vue 在启动时生成生产提示。
 Vue.config.productionTip = false
 
+
 if ('addEventListener' in document) {     //消除点击延迟300ms，不需要双击
     document.addEventListener('DOMContentLoaded', function() {
         FastClick.attach(document.body);
