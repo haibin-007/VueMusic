@@ -12,3 +12,5 @@ export default {
 		state.longitude = longitude;
 	},
 }
+
+
