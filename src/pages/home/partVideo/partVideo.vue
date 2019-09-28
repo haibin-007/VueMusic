@@ -32,6 +32,7 @@
             <div ref="drager" :style="{'left': `${item.posCurrent}%`}" class="dot" v-show="item.isControlShow&&!item.loading&&item.isPlayShow"></div>
           </div>
         </div>
+
         <div class="info">
           <div class="title">
             <p class="ell">{{item.name}}</p>
